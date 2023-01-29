@@ -8,7 +8,7 @@ class HomePageData:
     @staticmethod
     def getTestData(test_case_name):
         Dict = {}
-        book = openpyxl.load_workbook("C:/UserData.xlsx")
+        book = openpyxl.load_workbook(r"E:\Testing\Testing Notes\Automation Notes\FrameWork\PythonSelFramework\TestData\UserData.xlsx")
         sheet = book.active
         for i in range(1, sheet.max_row + 1):  # to get rows
             if sheet.cell(row=i, column=1).value == test_case_name:
